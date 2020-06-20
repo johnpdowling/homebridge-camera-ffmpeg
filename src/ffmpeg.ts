@@ -37,15 +37,14 @@ export class FfmpegProcess {
       this.ff.stderr.on('data', (data) => {
         if (!started) {
           started = true;
-          log.debug(`${title}: received first frame`);
+          log.debug(`${title}: received first frame: ${String(data)}`);
           if (callback) {
             callback(); // do not forget to execute callback once set up
           }
         }
 
-        if (ffmpegDebugOutput) {
-          log(`${title}: ${String(data)}`);
-        }
+        log.debug(`${title}: ${String(data)}`);
+        
       });
     }
     this.ff.on('error', (error) => {
