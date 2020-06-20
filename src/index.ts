@@ -19,8 +19,8 @@ import { StreamingDelegate } from './streamingDelegate';
 let hap: HAP;
 let Accessory: typeof PlatformAccessory;
 
-const PLUGIN_NAME = 'homebridge-camera-ffmpeg';
-const PLATFORM_NAME = 'Camera-ffmpeg';
+const PLUGIN_NAME = 'homebridge-camera-ffmpeg-jetson';
+const PLATFORM_NAME = 'Camera-ffmpeg-jetson';
 
 class FfmpegPlatform implements DynamicPlatformPlugin {
   private readonly log: Logging;
