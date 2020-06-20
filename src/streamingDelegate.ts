@@ -370,9 +370,9 @@ export class StreamingDelegate implements CameraStreamingDelegate {
           fcmd += ffmpegAudioStream;
         }
 
-        if (this.debug) {
-          fcmd += ' -loglevel debug';
-        }
+//        if (this.debug) {
+//          fcmd += ' -loglevel debug';
+//        }
 
         const ffmpeg = new FfmpegProcess(
           'FFMPEG',
