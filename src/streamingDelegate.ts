@@ -209,7 +209,7 @@ export class StreamingDelegate implements CameraStreamingDelegate {
       case StreamRequestTypes.START:
         const vcodec = this.ffmpegOpt.vcodec || 'libx264';
         const acodec = this.ffmpegOpt.acodec || 'libfdk_aac';
-        const additionalCommandline = this.ffmpegOpt.additionalCommandline || '-preset ultrafast -tune zerolatency';
+        const additionalCommandline = this.ffmpegOpt.additionalCommandline || '-preset ultrafast';
         const mapvideo = this.ffmpegOpt.mapvideo || '0:0';
         const mapaudio = this.ffmpegOpt.mapaudio || '0:1';
 
