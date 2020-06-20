@@ -21,10 +21,8 @@ export class FfmpegProcess {
     let started = false;
     const controller = delegate.controller;
 
-    if (ffmpegDebugOutput) {
-      log(`${title} command: ffmpeg ${command}`);
-    }
-
+    log.debug(`${title} command: ffmpeg ${command}`);
+      
     const videoProcessor = customFfmpeg || pathToFfmpeg || 'ffmpeg';
     this.ff = spawn(videoProcessor, command.split(' '), { env: process.env });
 
