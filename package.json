@@ -1,6 +1,6 @@
 {
-  "displayName": "Homebridge Camera FFmpeg",
-  "name": "homebridge-camera-ffmpeg",
+  "displayName": "Homebridge Camera FFmpeg Jetson",
+  "name": "homebridge-camera-ffmpeg-jetson",
   "version": "2.0.0",
   "description": "ffmpeg plugin for homebridge: https://github.com/homebridge/homebridge",
   "main": "dist/index.js",
@@ -24,10 +24,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/johnpdowling/homebridge-camera-ffmpeg.git"
+    "url": "git://github.com/johnpdowling/homebridge-camera-ffmpeg-jetson.git"
   },
   "bugs": {
-    "url": "http://github.com/johnpdowling/homebridge-camera-ffmpeg/issues"
+    "url": "http://github.com/johnpdowling/homebridge-camera-ffmpeg-jetson/issues"
   },
   "engines": {
     "node": ">=10",
